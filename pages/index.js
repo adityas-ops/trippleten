@@ -1,118 +1,100 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-
-const inter = Inter({ subsets: ['latin'] })
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
-    >
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">pages/index.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
+    <>
+      <div className=" w-full h-full flex justify-center">
+        <div className="h-full  w-full pl-10">
+          <div className="w-full h-[620px]   bg-white overflow-visible  relative">
+            <div className="absolute  top-[36px] left-[60px] text-[#ffcb48] w-[1160px]">
+              <h1 className=" font-noto font-[700] text-[86px]"> You can</h1>
+            </div>
+            <Link className="" href="#">
+              <div className="absolute top-[509px] left-[461px] w-[270px] h-[60px] font-mono rounded-[14px] bg-[#3979e8] text-white flex items-center justify-center font-[500] z-20">
+                Choose profession
+              </div>
+            </Link>
+            <Link href="#">
+              <div className=" absolute top-[509px] left-[751px] w-[270px] h-[60px] text-[#262626] text-center z-20 flex items-center justify-center font-[500] border-2 border-[#262626] rounded-[14px] ">
+                How it works
+              </div>
+            </Link>
+            <div className=" absolute top-[127px] left-[60px] w-[1106px] z-20">
+              <h1 className=" font-noto font-[700] text-[86px] text-[#262626]">
+                upgrade your career
+              </h1>
+            </div>
+            <div className=" top-[211px] absolute left-[455px] w-[758px] text-[#ffcb48]">
+              <h1 className=" font-noto font-[700] text-[86px] text-[#ffcb48]">
+                even if
+              </h1>
+            </div>
+            <div className=" absolute top-[318px] left-[455px] w-[683px] z-40">
+              <h1 className=" font-noto font-[700] text-[86px] text-[#262626] tracking-[-2px] leading-[91px]">
+                it seem pretty hard
+              </h1>
+            </div>
+            <div className=" absolute left-[76px] z-50 top-[270px] w-[335px] ">
+              <div className="img1">
+                <img
+                  src="/images/tild3832-6265-4864-a561-323034653662__isr-main-img-1.jpg"
+                  alt="as"
+                  className="w-full rounded-[24px]  "
+                />
+              </div>
+            </div>
+            <div className=" absolute top-[61px] left-[1072px] w-[222px] z-50">
+              <div className="img2">
+                <img
+                  src="/images/tild3430-3735-4832-a432-386235336565__isr-main-img-2.jpg"
+                  alt="as"
+                  className="w-full rounded-[24px]"
+                />
+              </div>
+            </div>
+            <div className=" absolute left-[920px] w-[108px] top-[19px] z-50">
+              <div className="img3">
+                <img
+                  src="/images/tild6164-3762-4566-b864-633963383064__isr-main-img-3.jpg"
+                  className="w-full rounded-[24px]"
+                  alt="as"
+                />
+              </div>
+            </div>
+            <div className=" absolute top-[12px] left-[500px] w-[120px]">
+              <div className="img4">
+                <img
+                  src="/images/tild3038-6531-4238-a430-633938313637__isr-main-img-4.jpg"
+                  className="w-full rounded-[24px]"
+                  alt="as"
+                />
+              </div>
+            </div>
+            <div className=" absolute w-[740px] top-0 left-[620px] h-[602px] z-10">
+              <div className=" bg-cover bg-no-repeat">
+                <img
+                  src="https://d30ql1y9posr4b.cloudfront.net/en-mys/tild3261-3765-4633-b530-663134356165__ind-main-ill-3.svg"
+                  className="bg-cover bg-no-repeat"
+                />
+              </div>
+            </div>
+            <div className=" w-[200px] absolute top-[110px] z-10 h-[180px] left-[-81px] ">
+              <img
+                src="https://d30ql1y9posr4b.cloudfront.net/en-mys/tild3731-6238-4934-a561-346436633732__ind-main-ill-1.svg"
+                alt="as"
+                className="bg-cover bg-no-repeat"
+              />
+            </div>
+            <div className=" absolute w-[400px] left-[120px] top-[-10px] h-[60px]">
+              <img
+                src="https://d30ql1y9posr4b.cloudfront.net/en-mys/tild6664-3933-4538-b862-356634366231__ind-main-ill-2.svg"
+                alt="as"
+                className="bg-cover bg-no-repeat"
+              />
+            </div>
+          </div>
+        </div>{" "}
       </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700/10 after:dark:from-sky-900 after:dark:via-[#0141ff]/40 before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Discover and deploy boilerplate example Next.js&nbsp;projects.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+    </>
+  );
 }
